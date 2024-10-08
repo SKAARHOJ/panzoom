@@ -789,19 +789,19 @@ function createPanZoom(domElement, options) {
       return false;
     }
 
-    if (panButton === 'left') {
-      // for IE, left click == 1
-      // for Firefox, left click == 0
-      var isLeftButton =
-        (e.button === 1 && window.event !== null) || e.button === 0;
-      if (!isLeftButton) return;
-    }
+    // if (panButton === 'left') {
+    //   // for IE, left click == 1
+    //   // for Firefox, left click == 0
+    //   var isLeftButton =
+    //     (e.button === 1 && window.event !== null) || e.button === 0;
+    //   if (!isLeftButton) return;
+    // }
 
-    if (panButton === 'middle') {
-      var isMiddleButton =
-        (e.button === 3 && window.event !== null) || e.button === 1;
-      if (!isMiddleButton) return;
-    }
+    // if (panButton === 'middle') {
+    //   var isMiddleButton =
+    //     (e.button === 3 && window.event !== null) || e.button === 1;
+    //   if (!isMiddleButton) return;
+    // }
 
     smoothScroll.cancel();
 
